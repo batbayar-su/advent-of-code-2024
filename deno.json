@@ -1,7 +1,7 @@
 {
   "fmt": {
     "options": {
-      "lineWidth": 120,
+      "lineWidth": 200,
       "indentWidth": 2,
       "singleQuote": true,
       "proseWrap": "always"
