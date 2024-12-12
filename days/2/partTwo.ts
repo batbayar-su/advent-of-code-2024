@@ -32,11 +32,11 @@ function validateReports(reports: number[]): boolean {
 
 async function main() {
   const input = await Deno.readTextFile(`${import.meta.dirname}/input.txt`);
-  const lines = input.trim().split("\n");
+  const lines = input.trim().split('\n');
 
   let result = 0;
   for (const line of lines) {
-    const reports = line.split(" ").map((r) => parseInt(r));
+    const reports = line.split(' ').map((r) => parseInt(r));
 
     if (validateReports(reports)) result++;
   }

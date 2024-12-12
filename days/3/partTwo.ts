@@ -4,7 +4,7 @@ function collectValidRanges(input: string) {
   let rangeEnd = 0;
   while (rangeEnd !== -1) {
     if (rangeEnd !== 0) {
-      rangeStart = input.indexOf("do()", rangeEnd);
+      rangeStart = input.indexOf('do()', rangeEnd);
       if (rangeStart === -1) break;
       rangeStart += 4;
     }
@@ -28,9 +28,9 @@ class Instruction {
   operation: string;
 
   constructor(input: string) {
-    const open = input.indexOf("(");
+    const open = input.indexOf('(');
     this.operation = input.slice(0, open);
-    const eoFirstTerm = input.indexOf(",", open);
+    const eoFirstTerm = input.indexOf(',', open);
     const firstTerm = parseInt(input.slice(open + 1, eoFirstTerm));
     const lastTerm = parseInt(input.slice(eoFirstTerm + 1, -1));
     this.terms = [firstTerm, lastTerm];
@@ -38,7 +38,7 @@ class Instruction {
 
   execute() {
     switch (this.operation) {
-      case "mul":
+      case 'mul':
         return this.terms[0] * this.terms[1];
       default:
         return 0;
