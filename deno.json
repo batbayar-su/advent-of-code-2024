@@ -20,6 +20,7 @@
     "day52": "deno run --allow-read days/5/partTwo.ts",
     "day61": "deno run --allow-read days/6/partOne.ts",
     "day62": "deno run --allow-read days/6/partTwo.ts",
-    "day71": "deno run --allow-read days/7/partOne.ts"
+    "day71": "deno run --allow-read days/7/partOne.ts",
+    "day72": "deno run --allow-read days/7/partTwo.ts"
   }
 }
